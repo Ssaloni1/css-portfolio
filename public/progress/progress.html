@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progress Diary</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+</head>
+<body class="coding-mode">
+  <header>
+    <h1>My Progress Diary</h1>
+  </header>
+
+  <div class="tabs">
+    <button id="codingTab" class="tab active">Coding & Tech</button>
+    <button id="animeTab" class="tab">Anime List</button>
+  </div>
+
+  <div id="codingSection" class="section active">
+    <input id="codingTitle" placeholder="Title (optional)" />
+    <textarea id="codingEntry" placeholder="What did you code/learn today?"></textarea>
+    <button class="save-btn" onclick="saveDev()">Save your progress</button>
+    <div id="codingLog"></div>
+  </div>
+
+  <div id="animeSection" class="section">
+    <input id="animeTitle" placeholder="Anime Title" />
+    <textarea id="animeEntry" placeholder="Thoughts or Episode?"></textarea>
+    <button class="save-btn" onclick="saveAnime()">Save Anime</button>
+    <div id="animeLog"></div>
+  </div>
+
+  <footer>
+    © 2025 ssaloni1 — Progress Diary Project. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
